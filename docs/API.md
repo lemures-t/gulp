@@ -21,6 +21,12 @@ gulp.src('client/templates/*.jade')
 ```
 
 `glob` refers to [node-glob syntax](https://github.com/isaacs/node-glob) or it can be a direct file path.
+e.g.
+* `js/app.js` match the exact file name
+* `js/*.js` match all js files under file named js
+* `js/**/*.js` match all js files under all files under file named js
+* `!js/app.js` match all files except `js/app.js`under the root directory of the project
+* `*.+(js|css)` match all js or css files under the root directory of the project
 
 #### globs
 Type: `String` or `Array`
